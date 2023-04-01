@@ -4,82 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behind You</title>
-    <link rel="icon" href="./hand.png">
-
-    <style>
-      body {
-        background-color: #000000;
-      }
-        button {
-          padding: 12px 30px;
-          font-size: 20px;
-          margin: 20px;
-          border-radius: 5px;
-          background-color: #2d2d2d;
-          color: #ff0000;
-          cursor: pointer;
-          border: none;
-          font-family: 'Courier New', Courier, monospace;
-          font-style: italic;
-          font-weight: bold;
-        }
-  
-        p {
-          font-size: 20px;
-          font-weight: bold;
-          text-align: left;
-          margin: 20px;
-          color: red;
-          font-family: "Courier New", Courier, monospace;
-        }
-        #jumpscare {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("./horror.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        }
-      </style>
-</head>
+    <title>get some help</title>
+    <link rel="icon" href="./RickAstley.png ">
 <body>
-  <button id="tellFortune">Click me</button>
-  <p id="fortune"></p>
-  <div id="jumpscare"></div>
-
-  <script>
-    const fortunes = [
-      "Look behind you....",
-      "I'm watching you.....",
-    ];
-
-    const tellFortune = document.getElementById("tellFortune");
-    const fortuneText = document.getElementById("fortune");
-    const jumpscare = document.getElementById("jumpscare");
-    const audio = new Audio("./scream.mp3");
-
-    tellFortune.addEventListener("click", function() {
-      const randomIndex = Math.floor(Math.random() * fortunes.length);
-      let i = 0;
-      fortuneText.innerText = "";
-      const typeWriter = setInterval(() => {
-        if (i < fortunes[randomIndex].length) {
-          fortuneText.innerHTML += fortunes[randomIndex][i] === " " ? "&nbsp;" : fortunes[randomIndex][i];
-          i++;
-        } else {
-          clearInterval(typeWriter);
-          setTimeout(() => {
-            audio.play();
-            jumpscare.style.display = "block";
-          }, 5000);
-        }
-      }, 50);
-    });
-  </script>
-</body>
+  <iframe id="urmom" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/4Jui6Prje6o?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=1&start=0&end=0&origin=https://youtubeembedcode.com"><div></div></iframe></body>
 </html>
