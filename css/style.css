@@ -435,10 +435,7 @@ form textarea {
   }
   .information .info-box span {
     font-size: 1rem;
-  }
-  .portfolio-content {
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  }
+	  
   .contact-form form{
     width: 300px;
   }
